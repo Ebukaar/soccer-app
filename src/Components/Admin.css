@@ -1,0 +1,484 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* background:#910191; */
+    
+}
+.gallery-image-admin {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+  }
+.regular {
+    font-weight: 400;
+}
+.admin-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem ;
+
+}
+
+.btn {
+    /* display: inline-block; */
+    color: #fff;
+    background: #910191;
+    /* padding: 0.2rem 0.7rem ; */
+    padding: 0.3rem 1rem;
+    /* margin: auto; */
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+}
+.btn:hover{
+    background: #800080; 
+}
+
+.btn-round{
+    color: #fff;
+    background: #910191;
+    /* padding: 0.2rem 0.7rem ; */
+    padding: 0.5rem 1rem;
+    /* margin: auto; */
+    border: none;
+    border-radius: 100px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.btn-round:hover{
+    background: #800080; 
+}
+
+.is-sized{
+    font-size: 20px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.space button{
+    padding-right: 1rem;
+}
+
+/* Table css begins */
+/* .content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2rem;
+    min-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: left;
+    
+} */
+
+.is-big {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.create-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-table thead tr th {
+    color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 410;
+}
+
+.content-table thead tr  {
+    background-color: purple;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(55, 0, 60);
+}
+/* Table css ends */
+
+
+/* Input css begins */
+.label-field {
+    position: relative;
+    font-size: 14px;
+    padding-top: 20px ;
+    margin-bottom: 5px;
+}
+
+
+.label-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 3px;
+    width: 200px;
+    outline: none;
+    font-size: 14px;
+}
+
+.label-field .placeholder {
+    position: absolute;
+    left: 12px;
+    top: calc(50% + 10px);
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+    top 0.3s ease,
+    font-size 0.3s ease,
+    color 0.3s ease;
+    
+}
+
+.label-field input:valid + .placeholder,
+.label-field input:focus + .placeholder {
+    top: 10px;
+    font-size: 10px;
+    color: #222;
+}
+
+.label-field.lined input {
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: 
+     /*90deg is the same as left to right */
+        linear-gradient(90deg, #800080, #800080) center bottom/0 2px no-repeat,
+        linear-gradient(90deg, #DD04DD, #DD04DD) left bottom/100% 2px no-repeat,
+        linear-gradient(90deg, #E9E8E8, #E9E8E8) left bottom/100% no-repeat;
+        transition: background-size 0.3s ease;
+}
+
+.label-field.lined input:valid,
+.label-field.lined input:focus {
+    background-size: 100% 2px, 100% 2px, 100%
+}
+
+/* Input Css ends */
+
+/* .is-spaced{
+    display: flex;
+    flex-direction: column;
+  
+} */
+
+.is-padded-left{
+ padding-left: 2rem;
+ font-size: 17px;
+}
+
+
+
+/* Table Styling*/
+.table-title {
+    font-size: 35px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+   
+}
+
+/* Images styling */
+
+
+
+.upload-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 7rem;
+    padding-bottom: 5rem;
+  
+}
+
+.upload-section-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+    padding: 0 7rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+  
+}
+
+.input-tag{
+   font-size: 16px;
+   background: #fff;
+   border-radius: 5px;
+   /* box-shadow: -5px 5px 20px rgba(0,0,0,0.5); */
+   width: 300px;
+   /* height: 25px; */
+   outline: none;
+}
+
+::-webkit-file-upload-button{
+    color: white;
+    background: #910191;
+    border-radius: 5px;
+    border: none;
+    padding: 0.4rem;
+    cursor: pointer;
+  
+}
+
+/* Images */
+.App {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .club-image-admin {
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+  }
+
+  .shift{
+    padding-right: 1rem;
+  }
+
+  /* Club Styling */
+  .center {
+    /* justify-content: center;
+    text-align: center; */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #txtid {
+    /* background-color: aqua */
+    border: 2px solid rgb(55, 0, 60);
+}
+
+.txt{
+    font-size: 18px;
+    color: black;
+}
+
+
+
+
+/* table.css styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.content-table-admin {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2rem;
+    min-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;  
+}
+
+.content-table-admin thead tr th {
+    color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 410;
+}
+
+
+.content-table-admin thead tr, button  {
+    background-color: purple;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+button {
+    font-size: 0.5rem;
+}
+
+.content-table-admin th,
+.content-table-admin td {
+    padding: 12px 15px;
+}
+
+.content-table-admin tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table-admin tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+
+.content-table-admin tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(55, 0, 60);
+}
+
+
+@media only screen and (max-width: 319px) {
+.content-table-admin{
+    width: 98vh;
+    margin-left: 10px;
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .content-table-admin {
+    /* min-width: 650px; */
+    width: 98vh;
+   margin-left: 10px;
+    /* margin-left: 15px;
+    margin-right: 5px; */
+    }
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 768px) {
+    .content-table-admin {
+        width: 80vh;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (width: 280px), 
+screen and (height: 653px) {
+
+    .content-table-admin {
+        width: 100vh;
+        margin-left: 25px;
+    }
+}
+
+
+@media only screen 
+and (max-device-width : 600px) {
+   .content-table-admin{
+    display: none;
+   }
+
+   .admin-styling{
+    /* width: 100vh; */
+    margin-left: 2rem;
+    width: 90vh;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center; */
+   }
+
+   .admin-images-gallery {
+  
+  }
+  
+  .gallery-image-admin {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+  }
+
+  .shift{
+    padding-right: 1rem;
+  }
+
+
+
+  .admin-header{
+    display: flex;
+    justify-content:space-between;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 12rem ;
+
+}
+
+.is-big {
+    font-size: 30px;
+    font-weight: 700;
+    padding-right: 25rem;
+}
+
+.table-title {
+    font-size: 35px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 7rem;
+    
+}
+
+.btn {
+    /* display: inline-block; */
+    color: #fff;
+    background: #910191;
+    /* padding: 0.2rem 0.7rem ; */
+    padding: 0.7rem 1rem;
+    /* margin: auto; */
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    cursor: pointer;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.club-image-admin {
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+  }
+  
+  .upload-section {
+    display: flex;
+    flex-direction: coulmn;
+    justify-content: space-evenly;
+    text-align: center;
+    padding: 0 7rem;
+    padding-bottom: 5rem;
+  
+}
+}

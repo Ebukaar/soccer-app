@@ -1,0 +1,221 @@
+/* .App {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  } */
+  
+  img {
+    width: 100%;
+   
+  }
+
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 5px 12px;
+   
+    
+  }
+
+  .gallery .pictures {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+
+  .gallery .pictures:hover {
+    filter: opacity(.85);
+  }
+
+ 
+  /* Model */
+  .model{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212121;
+    transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+    z-index: 999;
+  }
+
+
+  .model.open {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1)
+
+  }
+
+ 
+  
+  .model img {
+    width: auto;
+    max-width: 90%;
+    height: auto;
+    max-height: 90%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+  }
+
+  .model.open .xmark-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 2rem;
+    height: 2rem;
+    padding: 5px;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.8rem;
+    background-color: transparent;
+  }
+
+
+  @media (max-width: 991px){
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        justify-content: center;
+        margin: 0.5rem 1rem;
+       
+
+    }
+
+  }
+
+  @media (max-width: 480px){
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+        width: 100vh;
+        justify-content: center;
+        margin: 0.5rem 1rem;
+      
+
+      }
+
+  }
+
+  @media only screen 
+and (min-device-width : 500px) and (max-device-width : 800px) {
+
+  .gallery{
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 2;
+    justify-content: center;
+    margin: 0.5rem 1rem;
+    width: 98vh;
+   
+
+}
+
+
+
+}
+
+
+@media only screen 
+and (min-device-width : 736px) 
+and (max-device-width : 740px) {
+
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 5px 12px;
+    width: 200vh;
+   
+    
+  }
+
+}
+
+
+@media only screen 
+and (min-device-width : 667px) 
+and (max-device-width : 670px) {
+
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 5px 12px;
+    width: 170vh;
+   
+    
+  }
+
+}
+
+@media only screen 
+and (min-device-width : 650px) 
+and (max-device-width : 655px) {
+
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 5px 12px;
+    width: 220vh;
+   
+    
+  }
+
+
+}
+
+
+@media screen and (width: 768px), 
+screen and (height: 1024px) {
+
+  .gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 5px 12px;
+    margin-top: 12rem;
+    margin-bottom: 18rem;
+    width: 175vh;
+   
+    
+  }
+
+}

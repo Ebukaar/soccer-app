@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+  }
+
+li {
+ /* text-decoration: none;
+ list-style: none; */
+ list-style-type: none;
+}
+
+.navbar{
+    height: 13vh;
+    line-height: 10vh;
+    box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+    background-color: rgb(55, 0, 60);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+.logo {
+    font-size: 25px;
+    color: #fff;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+
+
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    width: 75%;
+}
+
+
+
+.nav-links li {
+    color: #fff;
+    font-size: 17px;
+    padding: 0 10px;
+    margin: 0 10px;
+    cursor: pointer;
+    text-transform: capitalize;
+    /* text-decoration: none;
+    list-style: none; */
+}
+
+.nav-links li:hover{
+    color: #335;
+}
+
+.hero{
+    text-align: center;
+    margin-top: 15%;
+}
+
+.hero h1{
+    text-align: center;
+    font-size: 60px;
+}
+
+button{
+    border: none;
+    background: none;
+    font-size: 17px;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+@media (max-width: 767px) {
+/* @media (max-width: 600px) { */
+    .nav-links{
+        display: none;
+    }
+
+    .nav-links-mobile {
+        /* position: absolute; */
+        position: absolute;
+        display: block;
+        list-style: none;
+        box-shadow: rgba(50, 50, 93, 0.23) 0 30px 30px -20px;
+        left: 0;
+        top: 100%;
+        /* top: 10%; */
+        transition: all 0.5 ease-in-out;
+        width: 100%;
+        background-color: purple;
+        z-index: 1;
+        height: 200vh;
+    }
+
+
+    ul li{
+        padding: 95px;
+        width: 100%;
+        transition: all 0.5 ease-in-out;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .mobile-menu-icon{
+        position: absolute;
+        display: block;
+        right: 20px;
+        font-size: 40px;
+        color: white;
+        background: transparent;
+        
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .logo {
+        font-size: 40px;
+        margin: 15px;
+    }   
+}
+
+@media screen and (width: 280px), 
+screen and (height: 653px) {
+
+    .navbar {
+        /* width: 159%; */
+        width: 100vh;
+    }
+
+    
+
+    
+
+}
+@media only screen and (max-width: 480px){
+    .navbar {
+        /* width: 159%; */
+        width: 105vh;
+    }
+
+    ul li{
+        padding: 60px;
+        width: 100%;
+        transition: all 0.5 ease-in-out;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+
+    .nav-links-mobile {
+        
+        height: 232vh;
+    }
+
+    
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 768px) {
+    .navbar {
+        /* width: 159%; */
+        width: 105vh;
+    }
+}
+
+@media only screen 
+and (max-device-width : 580px) {
+    .navbar {
+        /* width: 159%; */
+        width: 105vh;
+    }
+}
+
+@media only screen 
+and (min-device-width : 460px) 
+and (max-device-width : 767px) {
+
+    ul li{
+        padding: 40px;
+        width: 100%;
+        transition: all 0.5 ease-in-out;
+        text-align: center;
+        color: #fff;
+        font-size: 25px;
+    }
+    
+
+}
+
+@media only screen 
+and (min-device-width : 600px) 
+and (max-device-width : 780px) {
+    .nav-links{
+        display: flex;
+        justify-content: flex-end;
+        width: 75%;
+    }
+
+    .mobile-menu-icon{
+       display: none;
+        
+    }
+
+    .navbar {
+        /* width: 159%; */
+         width: 180vh;
+    } 
+
+    .nav-links li {
+        color: #fff;
+        font-size: 17px;
+        padding: 0 7px;
+        margin: 0 1px;
+        cursor: pointer;
+        text-transform: capitalize;
+     
+    }
+
+    
+
+
+}  
+
+@media screen and (width: 653px), 
+screen and (height: 280px) {
+    .navbar {
+        /* width: 159%; */
+         width: 235vh;
+         height: 20vh;
+    } 
+
+}
+
+@media only screen 
+and (min-device-width : 736px) 
+and (max-device-width : 740px) {
+
+    .navbar {
+        /* width: 159%; */
+         width: 205vh;
+    }
+}
+
+
+@media screen and (width: 768px), 
+screen and (height: 1024px) {
+
+    .navbar {
+        
+         height: 20vh;
+    } 
+
+    .nav-links li {
+        color: #fff;
+        font-size: 17px;
+        padding: 0 10px;
+        margin: 0 10px;
+        cursor: pointer;
+        text-transform: capitalize;
+        /* text-decoration: none;
+        list-style: none; */
+    }
+
+    
+
+}

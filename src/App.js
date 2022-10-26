@@ -1,25 +1,66 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./Components/Home";
+import Clubs from "./Components/Clubs";
+import Fixtures from "./Components/Fixtures";
+import Gallery from "./Components/Gallery";
+import News from "./Components/News";
+import Results from "./Components/Results";
+import FooterSection from "./Components/Footer";
+import { AuthContextProvider } from "./Components/context/AuthContext";
+import ProtectedRoute from "./Components/ProtectedRoute";
+import Signin from "./Components/Signin";
+// import Signup from "./Components/Signup";
+// import "./index.css";
+// import '../src/Components/Table.css'
+import Admin from "./Components/Admin";
+// import "bulma/css/bulma.min.css";
+import './Components/Table.css'
+import './App.css'
 
-function App() {
+
+const App = () => {
+  // const [showFooter, setshowFooter] = useState(true)
+
+  // const smoothDropdown = () => {
+  //   return <FooterSection/>
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <div className="">
+
+   
+      <AuthContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/clubs" element={<Clubs />} />
+            <Route path="/fixtures" element={<Fixtures />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/news" element={<News />} />
+            <Route path="/results" element={<Results />} />
+            <Route path="/signin" element={<Signin />} />
+            {/* <Route path="/signup" element={<Signup />} /> */}
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <Admin />
+                </ProtectedRoute>
+              }
+            />
+          </Routes>
+          
+          <FooterSection />
+        </Router>
+      </AuthContextProvider>
+      </div>
+    </>
+    
   );
-}
+};
 
 export default App;

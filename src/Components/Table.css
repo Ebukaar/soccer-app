@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.2rem;
+    min-width: 600px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: -5px 5px 20px rgba(0,0,0,0.5);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;  
+}
+
+.content-table thead tr th {
+    color: #f3f3f3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 410;
+}
+
+
+.content-table thead tr, button  {
+    background-color: purple;
+    text-align: left;
+    font-weight: bold;
+    
+}
+
+button {
+    font-size: 0.5rem;
+}
+
+.content-table th,
+.content-table td {
+    padding: 12px 15px;
+}
+
+.content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+
+}
+
+.content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgb(55, 0, 60);
+}
+
+
+@media only screen and (max-width: 319px) {
+.content-table{
+    width: 98vh;
+    margin-left: 10px;
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .content-table {
+    /* min-width: 650px; */
+    width: 98vh;
+    margin-left: 32px;
+    /* margin-left: 15px;
+    margin-right: 5px; */
+    margin-top: 17rem;
+    margin-bottom: 17rem;
+    margin-right: 1px;
+    }
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 768px) {
+    .content-table {
+        width: 80vh;
+        margin-left: 60px;
+    }
+}
+
+@media screen and (width: 280px), 
+screen and (height: 653px) {
+
+    .content-table {
+        width: 80vh;
+        margin-left: 44px;
+        margin-top: 17rem;
+        margin-bottom: 17rem;
+        margin-right: 1px;
+
+    }
+}
+
+@media screen and (width: 412px), 
+screen and (height: 915px){
+        .content-table {
+            /* min-width: 650px; */
+            width: 98vh;
+            margin-left: 32px;
+            /* margin-left: 15px;
+            margin-right: 5px; */
+            margin-top: 19rem;
+            margin-bottom: 19rem;
+            margin-right: 1px;
+            }
+
+}
+
+@media screen and (width: 653px), 
+screen and (height: 280px) {
+
+    .content-table {
+        width: 80vh;
+        margin-left: 22px;
+        margin-right: 1px;
+
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 736px) 
+and (max-device-width : 740px) {
+        .content-table {
+            width: 80vh;
+            margin-left: 90px;
+        }
+        
+    }
+
+
+    @media screen and (width: 768px), 
+    screen and (height: 1024px) {
+    
+        .content-table {
+            /* width: 80vh; */
+            margin-left: 30rem;
+            margin-top: 20rem;
+            margin-bottom: 20rem;
+            margin-right: 1px;
+            min-width: 1000px;
+            min-height: 400px;
+    
+        }
+    }

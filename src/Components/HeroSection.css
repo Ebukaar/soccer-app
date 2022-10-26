@@ -1,0 +1,123 @@
+.hero-container {
+    background: url(../images/wallpaper.jpg) center center/cover no-repeat;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+}
+
+/* .hero-container > h1 {
+    color: #444;
+    font-size: 50px;
+    margin-top: -50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+
+/* .hero-container > p { */
+    /* margin-top: 1px; */
+    /* color: #fff;
+    font-size: 32px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+} */
+/* 
+@media screen and (max-width: 960px) {
+    .hero-container > h1 {
+        font-size: 70px;
+        margin-top: -150px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-container > h1 {
+        font-size: 50px;
+        margin-top: -100px;
+    }
+
+    .hero-container > p {
+        font-size: 30px;
+    }
+} */
+
+/* @media screen and (max-width: 820px) {
+    .hero-container {
+        width: 145%;
+    }
+} */
+
+/* @media only screen and (max-width: 425px){
+    .hero-container {
+        width: 159%;
+    }
+} */
+
+@media only screen and (max-width: 319px) {
+    .hero-container {
+        width: 100vh;
+    }
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+    .hero-container {
+        width: 105vh;
+    }
+    
+}
+
+@media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 768px) {
+
+    .hero-container {
+        width: 105vh;
+    }
+}
+
+@media screen and (width: 280px), 
+screen and (height: 653px) {
+
+    .hero-container {
+        width: 105vh;
+    }
+
+}
+@media screen and (width: 653px), 
+screen and (height: 280px) {
+
+    .hero-container {
+        width: 235vh;
+    }
+}
+
+@media only screen 
+and (min-device-width : 736px) 
+and (max-device-width : 740px) {
+    .hero-container {
+        width: 205vh;
+    }
+
+}
+
+@media only screen 
+and (min-device-width : 667px) 
+and (max-device-width : 670px) {
+
+    .hero-container {
+        width: 180vh;
+    }
+
+}
+
+@media screen and (width: 768px), 
+screen and (height: 1024px) {
+
+    .hero-container {
+        width: 180vh;
+    }
+
+}

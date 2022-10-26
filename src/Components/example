@@ -1,0 +1,67 @@
+<div >
+<!-- <table className='table' cellSpacing="0" style={{ width: 'auto', height: 'auto', padding: '5px 10px'}}> -->
+   {/* <thead> */}
+     <tr>
+       <th>Pos</th>
+       <th>Club</th>
+       <th>Pl</th>
+       <th>GD</th>
+       <th>Pts</th>
+     </tr>
+   {/* </thead> */}
+   <tr>
+     <td> 1 </td>
+     <td class="flex">
+       <div class="name">Team 1</div>
+         <div class="teamLogoDiv">
+           {/* <img src="assets/logos/team%20(1).png" alt="Team Logo" class="teamLogo"> */}
+         </div>
+     </td>
+     <td>1</td>
+       <td>+5</td>
+       <td class="points">3</td>
+   </tr>
+   
+   
+   </table>
+
+{teams.map((team) =>{ 
+ 
+ return <div className='table' > 
+   
+     {/* <p> Team: {team.teamName}</p>
+     <p> Played: {team.played}</p>
+     <p>Goal Difference: {team.goalDiff}</p>
+     <p>Points: {team.points}</p> */}
+ 
+  
+   
+ 
+ </div>
+} )}
+ {/* <table>
+ <tr>
+     <th>Pos</th>
+     <th>Club</th>
+     <th>Pl</th>
+     <th>GD</th>
+     <th>Pts</th>
+ </tr>
+ </table> */}
+
+</div>
+
+
+<!-- /for styling -->
+@media only screen and (max-width: 319px) {
+
+  @media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+
+  @media only screen 
+and (min-device-width : 481px) 
+and (max-device-width : 768px) {
+
+  @media screen and (width: 280px), 
+screen and (height: 653px) {
