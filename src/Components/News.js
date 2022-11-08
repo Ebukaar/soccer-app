@@ -22,7 +22,7 @@ const News = () => {
 
 
     return (
-        <section className=''>
+        <section className='news-section-wrapper'>
             <h1 className='news-heading'>News</h1>
 
             <div className="">

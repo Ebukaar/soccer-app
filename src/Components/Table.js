@@ -38,7 +38,7 @@ const Table = () => {
         {/* <table className="table is-hoverable is-stripped"> */}
        
        
-        <table className="content-table">
+        <table className="content-table-display">
           <thead>
             <tr>
               <th>Pos</th>
@@ -47,7 +47,7 @@ const Table = () => {
               <th>W</th>
               <th>D</th>
               <th>L</th>
-              <th>GD</th>
+              {/* <th>GD</th> */}
               <th>Pts</th>
             </tr>
           </thead>
@@ -62,7 +62,7 @@ const Table = () => {
                   <td>{team.matchWon}</td>
                   <td>{team.matchDrawn}</td>
                   <td>{team.matchLost}</td>
-                  <td>{team.goalDiff}</td>
+                  {/* <td>{team.goalDiff}</td> */}
                   <td>{team.points}</td>
                 </tr>
               );

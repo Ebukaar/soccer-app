@@ -19,6 +19,8 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
+    max-width: 1500px;
+    width: 100%;
    
     
   }
@@ -78,15 +80,16 @@
 
   .model.open .xmark-button{
     position: fixed;
-    top: 10px;
+    top: 20px;
     right: 10px;
     width: 2rem;
     height: 2rem;
     padding: 5px;
+    margin: 0.5rem;
     /* background-color: rgba(0, 0, 0, 0.4); */
     color: #ffffff;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     background-color: transparent;
   }
 
@@ -97,7 +100,7 @@
         -moz-column-count: 2;
         column-count: 2;
         justify-content: center;
-        margin: 0.5rem 1rem;
+        margin: 0.5rem 0rem;
        
 
     }
@@ -112,9 +115,9 @@
         -webkit-column-width: 100%;
         -moz-column-width: 100%;
         column-width: 100%;
-        width: 100vh;
+        /* width: 100vh; */
         justify-content: center;
-        margin: 0.5rem 1rem;
+        margin: 0.5rem 0rem;
       
 
       }
@@ -129,8 +132,8 @@ and (min-device-width : 500px) and (max-device-width : 800px) {
     -moz-column-count: 2;
     column-count: 2;
     justify-content: center;
-    margin: 0.5rem 1rem;
-    width: 98vh;
+    margin: 0.5rem 0rem;
+    /* width: 98vh; */
    
 
 }
@@ -152,7 +155,7 @@ and (max-device-width : 740px) {
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
-    width: 200vh;
+    /* width: 200vh; */
    
     
   }
@@ -172,7 +175,7 @@ and (max-device-width : 670px) {
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
-    width: 170vh;
+    /* width: 170vh; */
    
     
   }
@@ -191,7 +194,7 @@ and (max-device-width : 655px) {
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
-    width: 220vh;
+    /* width: 220vh; */
    
     
   }
@@ -211,9 +214,9 @@ screen and (height: 1024px) {
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
-    margin-top: 12rem;
-    margin-bottom: 18rem;
-    width: 175vh;
+    /* margin-top: 12rem;
+    margin-bottom: 18rem; */
+    /* width: 175vh; */
    
     
   }

@@ -26,8 +26,6 @@ const Navbar = () => {
             {Mobile ? <ImCross/>  : <FaBars />  } 
             </button>
            
-           
-
            {/* </div> */}
         </nav>
     )

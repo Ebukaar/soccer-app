@@ -34,7 +34,10 @@ const App = () => {
    
       <AuthContextProvider>
         <Router>
+       
           <Navbar />
+          
+      {/* <main style={{ flex: 1}}> */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/clubs" element={<Clubs />} />
@@ -53,9 +56,11 @@ const App = () => {
               }
             />
           </Routes>
+           {/* </main> */}
+         
           
           <FooterSection />
-        </Router>
+           </Router>
       </AuthContextProvider>
       </div>
     </>

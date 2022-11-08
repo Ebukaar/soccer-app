@@ -50,12 +50,17 @@ padding-right: 5rem;
     padding-bottom: 1rem;
 }
 
+.news-section-wrapper{
+    max-width: 1500px;
+    width: 100%;
+}
+
 
 @media only screen 
 and (max-device-width : 400px) {
 
     .news{
-        width: 100vh;
+        /* width: 100vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 9rem;
@@ -83,7 +88,7 @@ and (max-device-width : 400px) {
 and (min-device-width : 390px) and (max-device-width : 780px) {
 
     .news{
-        width: 100vh;
+        /* width: 100vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 11rem;
@@ -152,7 +157,7 @@ screen and (height: 915px){
 
 
     .news{
-        width: 100vh;
+        /* width: 100vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 13rem;
@@ -170,7 +175,7 @@ and (max-device-width : 740px) {
 
 
     .news{
-        width: 200vh;
+        /* width: 200vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 13rem;
@@ -186,7 +191,7 @@ and (min-device-width : 667px)
 and (max-device-width : 670px) {
 
     .news{
-        width: 170vh;
+        /* width: 170vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 2rem;
@@ -201,7 +206,7 @@ and (min-device-width : 650px)
 and (max-device-width : 655px) {
 
     .news{
-        width: 210vh;
+        /* width: 210vh; */
         padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 2rem;
@@ -216,7 +221,7 @@ and (max-device-width : 655px) {
 screen and (height: 1024px) {
 
     .news{
-        width: 130vh;
+        /* width: 130vh; */
         /* padding-left: 5rem;
         padding-right: 5rem;
         margin-bottom: 2rem; */

@@ -54,7 +54,7 @@ function FooterSection() {
             </Link>
           </div>
           {/* end footer logo */}
-          <small className="website-rights">Champs &copy; 2022</small>
+          {/* <small className="website-rights">Champs &copy; 2022</small> */}
           {/* Copyright end */}
 
           <div className="social-icons">
