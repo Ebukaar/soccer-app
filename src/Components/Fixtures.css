@@ -19,6 +19,7 @@
 
 .fixtures-table > p {
   font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 
 }
 
@@ -33,7 +34,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -61,10 +62,10 @@
 
 .fixture-card > h1{
     padding-top: 1rem;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 300;
     text-align: center;
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
 }
 

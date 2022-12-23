@@ -19,7 +19,7 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 5px 12px;
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
    
     
@@ -47,7 +47,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #212121;
+    /* background-color: #212121; */
+    background-color: #1C1C1C;
     transition: opacity .4s ease, visibility .4s ease, transform .5s ease-in-out;
     visibility: hidden;
     opacity: 0;
@@ -84,12 +85,12 @@
     right: 10px;
     width: 2rem;
     height: 2rem;
-    padding: 5px;
-    margin: 0.5rem;
+    /* padding: 5px;
+    margin: 0.5rem; */
     /* background-color: rgba(0, 0, 0, 0.4); */
     color: #ffffff;
     cursor: pointer;
-    font-size: 2.5rem;
+    font-size: 30px;
     background-color: transparent;
   }
 

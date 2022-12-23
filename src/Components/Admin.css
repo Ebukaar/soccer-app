@@ -82,7 +82,7 @@
 
 .is-big {
     font-size: 30px;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .create-box {
@@ -205,9 +205,10 @@
 
 /* Table Styling*/
 .table-title {
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 1rem;
     padding-bottom: 2rem;
+    font-weight: 400;
    
 }
 
@@ -443,10 +444,11 @@ and (max-device-width : 600px) {
 }
 
 .table-title {
-    font-size: 35px;
+    font-size: 30px;
     padding-top: 1rem;
     padding-bottom: 2rem;
     padding-left: 7rem;
+    font-weight: 400;
     
 }
 

@@ -28,7 +28,7 @@ li {
     position: sticky;
     top: 0;
     z-index: 10;
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
     
 }
@@ -37,7 +37,9 @@ li {
     font-size: 2rem;
     color: #fff;
     margin: 0.5rem;
+    margin-left: 2rem;
     cursor: pointer;
+    font-weight: 400;
 }
 
 
@@ -62,7 +64,7 @@ li {
 }
 
 .nav-links li:hover{
-    color: #335;
+    color: purple;
 }
 
 .hero{
@@ -115,14 +117,14 @@ button{
         transition: all 0.5 ease-in-out;
         text-align: center;
         color: #fff;
-        font-size: 25px;
+        font-size: 20px;
     }
 
     .mobile-menu-icon{
         position: absolute;
         display: block;
         right: 35px;
-        font-size: 50px;
+        font-size: 25px;
         color: white;
         background: transparent;
         
@@ -133,7 +135,7 @@ button{
     }
 
     .logo {
-        font-size: 40px;
+        font-size: 25px;
         margin: 35px;
     }   
 }

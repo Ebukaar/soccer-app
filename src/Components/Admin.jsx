@@ -42,7 +42,7 @@ const Admin = () => {
     const inputRef = useRef(null);
 
   const [newTeamName, setNewTeamName] = useState("");
-  const [newGoalDiff, setNewGoalDiff] = useState("");
+  const [newGoalDiff, setNewGoalDiff] = useState(0);
   const [newPlayed, setNewPlayed] = useState(0);
   const [newPoints, setNewPoints] = useState(0);
   const [newMatchWon, setNewMatchWon] = useState(0);
@@ -665,7 +665,7 @@ useEffect(()=> {
    // Add doc helps us to create a new user gotten from firebase
    const createTeam = async () => {
     await addDoc(teamsCollectionRef, {
-      goalDiff: newGoalDiff,
+      goalDiff: Number(newGoalDiff),
       played: Number(newPlayed),
       points: Number(newPoints),
       matchWon: Number(newMatchWon),
@@ -1014,37 +1014,37 @@ useEffect(() => {
       <button className='btn-round' onClick={()=> displayChange()}><i class="fa-solid fa-xmark"></i></button>
       <label className='label-field lined'>
       <input type='string'  onChange={(event) => { setNewTeamName(event.target.value); }} required/>
-      <span className='placeholder'>Enter Team Name</span>
+      <span className='placeholder'>Enter Team Name e.g Tigers</span>
       </label>
       
       <label className='label-field lined'>
       <input type="number"  onChange={(event) => { setNewPlayed(event.target.value); }} required/>
-      <span className='placeholder'>Enter Matches played</span>
+      <span className='placeholder'>Enter Matches played e.g 1</span>
       </label>
       
       <label className='label-field lined'>
       <input type="number" onChange={(event) => { setNewPoints(event.target.value); }} required/>
-      <span className='placeholder'>Enter Points</span>
+      <span className='placeholder'>Enter Points e.g 3</span>
       </label>
 
       <label className='label-field lined'>
       <input type="number" onChange={(event) => { setNewMatchWon(event.target.value); }} required/>
-      <span className='placeholder'>Enter Matches Won</span>
+      <span className='placeholder'>Enter Matches Won e.g 1</span>
       </label>
 
       <label className='label-field lined'>
       <input type="number" onChange={(event) => { setNewMatchLost(event.target.value); }} required/>
-      <span className='placeholder'>Enter Matches Lost</span>
+      <span className='placeholder'>Enter Matches Lost e.g 1</span>
       </label>
 
       <label className='label-field lined'>
       <input type="number" onChange={(event) => { setNewMatchDrawn(event.target.value); }} required/>
-      <span className='placeholder'>Enter Matches Drawn</span>
+      <span className='placeholder'>Enter Matches Drawn e.g 1</span>
       </label>
       
       <label className='label-field lined'>
-      <input type="string"  onChange={(event) => { setNewGoalDiff(event.target.value); }} required/>
-      <span className='placeholder'>Enter Goal Difference</span>
+      <input type="number"  onChange={(event) => { setNewGoalDiff(event.target.value); }} required/>
+      <span className='placeholder'>Enter Goal Difference e.g 0</span>
       </label>
 
       <button className='btn' onClick={createTeam}>Create a new team</button>
@@ -1170,11 +1170,11 @@ useEffect(() => {
             <button className='btn-round' onClick={()=> displayClub()}><i class="fa-solid fa-xmark"></i></button>
             <label className='label-field lined'>
             <input type='string' onChange={(event) => { setNewClubName(event.target.value); } } required/>
-            <span className='placeholder'>Enter New Club Name</span>
+            <span className='placeholder'>Enter New Club Name e.g Tigers</span>
             </label>
 
             <label for="fname" className='txt'>Club Info:</label>
-            <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" onChange={(event) => { setNewClubInfo(event.target.value); }} required>
+            <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" placeholder='Please enter club info here...' onChange={(event) => { setNewClubInfo(event.target.value); }} required>
             </textarea><br />
             <button className='btn' onClick={createClubAndInfo}>Create a new club</button>
             </> }
@@ -1194,7 +1194,7 @@ useEffect(() => {
                       {changeInput && <>
                         <label className='label-field lined'>
                       <input type='string' onChange={(event) => { setNewClubName(event.target.value); } } required/>
-                      <span className='placeholder'>Enter New Club Name</span>
+                      <span className='placeholder'>Enter New Club Name e.g Tigers</span>
                         </label>
                         <label className='label-field lined'>
                       <input type='string' onChange={(event) => { setNewClubInfo(event.target.value); } } required/>
@@ -1241,22 +1241,22 @@ useEffect(() => {
             <button className='btn-round' onClick={()=> displayFixtureCreate()}><i class="fa-solid fa-xmark"></i></button>  
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewMatchDate(event.target.value); }} required/>
-            <span className='placeholder'>Enter Match Date</span>
+            <span className='placeholder'>Enter Match Date e.g 1st Oct</span>
             </label>
             
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewLeftTeam(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team A</span>
+            <span className='placeholder'>Enter Team A e.g Whitesands</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewMatchTime(event.target.value); }} required/>
-            <span className='placeholder'>Enter Match Time</span>
+            <span className='placeholder'>Enter Match Time e.g 16:00</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewRightTeam(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team B</span>
+            <span className='placeholder'>Enter Team B e.g Kings College</span>
             </label>
 
 
@@ -1292,22 +1292,22 @@ useEffect(() => {
 
                             <label className='label-field lined'>
                             <input type='string'  onChange={(event) => { setNewMatchDate(event.target.value); }} required/>
-                            <span className='placeholder'>Enter Match Date</span>
+                            <span className='placeholder'>Enter Match Date e.g 1st Oct</span>
                             </label>
 
                             <label className='label-field lined'>
                             <input type='string'  onChange={(event) => { setNewLeftTeam(event.target.value); }} required/>
-                            <span className='placeholder'>Enter Team A</span>
+                            <span className='placeholder'>Enter Team A e.g Whitesands</span>
                             </label>
 
                             <label className='label-field lined'>
                             <input type='string'  onChange={(event) => { setNewMatchTime(event.target.value); }} required/>
-                            <span className='placeholder'>Enter Match Time</span>
+                            <span className='placeholder'>Enter Match Time e.g 16:00</span>
                             </label>
 
                             <label className='label-field lined'>
                             <input type='string'  onChange={(event) => { setNewRightTeam(event.target.value); }} required/>
-                            <span className='placeholder'>Enter Team B</span>
+                            <span className='placeholder'>Enter Team B e.g Kings College</span>
                             </label>
 
                             <label className='label-field lined'>
@@ -1336,32 +1336,32 @@ useEffect(() => {
             <button className='btn-round' onClick={()=> displayCreate()}><i class="fa-solid fa-xmark"></i></button>
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewMatchDated(event.target.value); }} required/>
-            <span className='placeholder'>Enter Match Date</span>
+            <span className='placeholder'>Enter Match Date e.g 1st Oct</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewDuration(event.target.value); }} required/>
-            <span className='placeholder'>Enter Duration</span>
+            <span className='placeholder'>Enter Duration e.g Half-time or Full-time</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewFirstTeam(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team A</span>
+            <span className='placeholder'>Enter Team A e.g Whitesands</span>
             </label>
 
             <label className='label-field lined'>
             <input type='number'  onChange={(event) => { setNewFirstTeamScore(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team A Score</span>
+            <span className='placeholder'>Enter Team A Score e.g 2</span>
             </label>
 
             <label className='label-field lined'>
             <input type='number'  onChange={(event) => { setNewSecondTeamScore(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team B Score</span>
+            <span className='placeholder'>Enter Team B Score e.g 1</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewSecondTeam(event.target.value); }} required/>
-            <span className='placeholder'>Enter Team B </span>
+            <span className='placeholder'>Enter Team B e.g Kings College</span>
             </label>
 
             <label className='label-field lined'>
@@ -1369,7 +1369,7 @@ useEffect(() => {
             <span className='placeholder'>Enter Serial Number e.g 1</span>
             </label>
 
-            <button className='btn' onClick={createResult}>Create a new team</button>
+            <button className='btn' onClick={createResult}>Create a new result</button>
             </> }
 
             </div>
@@ -1400,32 +1400,32 @@ useEffect(() => {
                                     
                                     <label className='label-field lined'>
                                         <input type='string'  onChange={(event) => { setNewMatchDated(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Match Date</span>
+                                        <span className='placeholder'>Enter Match Date e.g 1st Oct</span>
                                     </label>
 
                                     <label className='label-field lined'>
                                         <input type='string'  onChange={(event) => { setNewDuration(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Duration</span>
+                                        <span className='placeholder'>Enter Duration e.g Half-time or Full-time</span>
                                     </label>
 
                                     <label className='label-field lined'>
                                         <input type='string'  onChange={(event) => { setNewFirstTeam(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Team A</span>
+                                        <span className='placeholder'>Enter Team A e.g Whitesands</span>
                                     </label>
 
                                     <label className='label-field lined'>
                                         <input type='number'  onChange={(event) => { setNewFirstTeamScore(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Team A Score</span>
+                                        <span className='placeholder'>Enter Team A Score e.g 2</span>
                                     </label>
 
                                     <label className='label-field lined'>
                                         <input type='number'  onChange={(event) => { setNewSecondTeamScore(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Team B Score</span>
+                                        <span className='placeholder'>Enter Team B Score e.g 1</span>
                                     </label>
 
                                     <label className='label-field lined'>
                                         <input type='string'  onChange={(event) => { setNewSecondTeam(event.target.value); }} required/>
-                                        <span className='placeholder'>Enter Team B </span>
+                                        <span className='placeholder'>Enter Team B e.g Kings College </span>
                                     </label>
 
                                     <label className='label-field lined'>
@@ -1454,12 +1454,12 @@ useEffect(() => {
               <button className='btn-round' onClick={()=> displayNewsCreate()}><i class="fa-solid fa-xmark"></i></button>
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewPostTitle(event.target.value); }} required/>
-            <span className='placeholder'>Enter Post Title</span>
+            <span className='placeholder'>Enter Post Title e.g THE RETURN OF MESSI</span>
             </label>
 
             <label className='label-field lined'>
             <input type='string'  onChange={(event) => { setNewPostDate(event.target.value); }} required/>
-            <span className='placeholder'>Enter Post Date</span>
+            <span className='placeholder'>Enter Post Date e.g 1st Oct</span>
             </label>
 
             <label className='label-field lined'>
@@ -1468,7 +1468,7 @@ useEffect(() => {
             </label>
 
             <label for="fname" className='txt'>Post body:</label>
-            <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" onChange={(event) => { setNewPostBody(event.target.value); }} required>
+            <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" placeholder='Please enter post body here...' onChange={(event) => { setNewPostBody(event.target.value); }} required>
             </textarea>
             <br />
 
@@ -1495,12 +1495,12 @@ useEffect(() => {
 
                                 <label className='label-field lined'>
                                 <input type='string'  onChange={(event) => { setNewPostTitle(event.target.value); }} required/>
-                                <span className='placeholder'>Enter Post Title</span>
+                                <span className='placeholder'>Enter Post Title e.g THE RETURN OF MESSI</span>
                                 </label>
 
                                 <label className='label-field lined'>
                                 <input type='string'  onChange={(event) => { setNewPostDate(event.target.value); }} required/>
-                                <span className='placeholder'>Enter Post Date</span>
+                                <span className='placeholder'>Enter Post Date e.g 1st Oct</span>
                                 </label>
 
                                 <label className='label-field lined'>
@@ -1509,7 +1509,7 @@ useEffect(() => {
                                 </label>
 
                                 <label for="fname" className='txt'>Post body:</label>
-                                <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" onChange={(event) => { setNewPostBody(event.target.value); }} required>
+                                <textarea id="txtid" name="txtname" rows="6" cols="50" maxlength="200" placeholder='Please enter post body here...' onChange={(event) => { setNewPostBody(event.target.value); }} required>
                                 </textarea><br />
                             
                                 <button className='btn' onClick={ ()=>{ updatePostTitle(news.id, news.postTitle); updatePostDate(news.id, news.postDate); updateSerialNumo(news.id, news.serialNumo); updatePostBody(news.id, news.postBody) }}> Update </button>

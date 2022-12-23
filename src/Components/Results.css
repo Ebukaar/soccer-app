@@ -9,19 +9,22 @@
     justify-content: space-between;
     padding-bottom: 1rem;
     padding-top: 0.7rem;
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 3rem;
+    font-weight: 200;
 }
 
 .match-body{
     display: flex;
     justify-content: space-between;
-    font-size: 23px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 200;
     margin-bottom: 2rem;
     
 
 }
+
+
 
 .serialNum-result{
     font-size: 8px;
@@ -47,7 +50,7 @@
     margin-right: auto;
     text-align: center;
     /* max-width: 80rem; */
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
@@ -64,7 +67,7 @@
     display: flex;
     flex-direction: row;
     justify-content:space-evenly;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 300;
     
     
@@ -72,10 +75,10 @@
 
 .result-header{
     padding-top: 1rem;
-    font-size: 50px;
-    font-weight: 400;
+    font-size: 40px;
+    font-weight: 300;
     text-align: center;
-    max-width: 1500px;
+    max-width: 5000px;
     width: 100%;
     margin-top: 5rem;
 }

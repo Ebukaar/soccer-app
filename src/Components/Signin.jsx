@@ -57,7 +57,7 @@ const Signin = () => {
     {/* text-2xl font-bold py-2 */}
      <h1 className='header'>
        Sign in to your account 
-     </h1>
+     </h1> 
      {/* <p className='py-2'> 
      Don't have an account yet?  </p> */}
      {/* <Link to='/signup' className='underline '> Sign up. </Link>  */}

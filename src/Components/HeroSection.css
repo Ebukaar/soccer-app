@@ -1,13 +1,13 @@
 .hero-container {
-    background: url(../images/wallpaper.jpg) center center/cover no-repeat;
-    height: 80vh;
+    background: url(../images/footbal-team-wallpaper.JPG) center center/cover no-repeat;
+    height: 66vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     object-fit: contain;
-    max-width: 1500px;
+    max-width: 5000px;
 }
 
 /* .hero-container > h1 {
